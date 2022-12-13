@@ -11,8 +11,4 @@ class TodoViewSet(viewsets.ModelViewSet): #viewsets: indicamos la clase serializ
 class TestViewSet(viewsets.ModelViewSet):
     queryset = Todo.objects.all()
     permission_classes = [permissions.AllowAny]
-<<<<<<< HEAD
     serializer_class = TestTodoSerializer
-=======
-    serializer_class = TestTodoSerializer
->>>>>>> neorama
