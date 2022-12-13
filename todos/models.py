@@ -9,3 +9,8 @@ class Todo(models.Model):
     updated_at = models.DateField(auto_now_add=True)
     deleted_at = models.DateField(null=True)
     status = models.IntegerField(default=0)
+
+    #constructor
+    def __str__(self,title,body):
+        self.title=title
+        self.body=body
