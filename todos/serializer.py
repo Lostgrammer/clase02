@@ -4,16 +4,7 @@ from .models import Todo
 class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
-        fields = (
-            "id",
-            "title",
-            "body",
-            "created_at",
-            "done_at",
-            "updated_at",
-            "deleted_at",
-            "status",
-        )
+        fields = '__all__' #agregar todos los campos
         read_only_fields = ('created_at', 'done_at', 'updated_at', 'deleted_at',)
 
 class TestTodoSerializer(serializers.Serializer):
