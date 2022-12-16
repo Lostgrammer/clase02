@@ -33,7 +33,7 @@ class Login(APIView):
         email= request.data.get("email")
         password = request.data.get("password")
 
-        user = authenticate(email,password)
+        user = authenticate(email=email,password=password)
         if user is not None:
             #crear el token
             token=create_jwt_pair_for_user(user)

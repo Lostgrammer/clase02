@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     #api token
     'rest_framework_simplejwt',
     'users',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
